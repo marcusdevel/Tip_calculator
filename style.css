@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Figtree:wght@600;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Overpass:wght@400;700&family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Light-grayish-cyan);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "space mono", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--White);
+  border-radius: 15px;
+  padding: 20px;
+
+  margin: 0 auto;
+  width: 600px;
+}
+.logo {
+  padding: 80px;
+}
+#name {
+  font-size: 10px;
+  color: var(--Very-dark-cyan);
+  margin-bottom: 0;
+}
+
+#pay,
+#quantity {
+  color: var(--Very-dark-cyan);
+  font-size: 10px;
+}
+#pay {
+  margin-bottom: 30px;
+}
+#quantity {
+  margin-top: 25px;
+}
+.input-money input::placeholder {
+  text-align: right;
+}
+
+.grid-1 {
+  place-items: start;
+  max-width: 100%;
+  display: grid;
+
+  gap: 5px;
+  justify-content: space-around;
+}
+.grid-1 input {
+  display: grid;
+  padding: 10px;
+  font-size: 15px;
+  width: 235px;
+  background-color: var(--Very-light-grayish-cyan);
+  border: none;
+  margin-bottom: 30px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 255px;
+}
+#five,
+#ten,
+#fifteen,
+#twentyfive,
+#fifty {
+  font-size: 15px;
+  background-color: var(--Very-dark-cyan);
+  padding: 5px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+#custom {
+  background-color: var(--Very-light-grayish-cyan);
+  padding: 5px 10px;
+  color: var(--Very-dark-cyan);
+  border: none;
+  font-size: 15px;
+}
+
+.grid-2 {
+  background-color: var(--Very-dark-cyan);
+
+  border-radius: 10px;
+  height: 300px;
+
+  max-width: 100%;
+
+  display: grid;
+  padding: 20px;
+}
+
+.tip,
+.total {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+}
+.total {
+  padding: -20px;
+}
+
+.tip-amount {
+  text-align: left;
+  padding: 15px 0;
+}
+.total-amount {
+  padding: 15px 0;
+  text-align: left;
+}
+
+.tip-amount h2 {
+  font-size: 10px;
+  color: var(--Light-grayish-cyan);
+}
+
+.tip-amount h3 {
+  font-size: 8px;
+  color: var(--Grayish-cyan);
+}
+
+.total-amount h2 {
+  font-size: 10px;
+  color: var(--Light-grayish-cyan);
+}
+
+.total-amount h3 {
+  font-size: 8px;
+  color: var(--Grayish-cyan);
+}
+
+span {
+  font-size: 35px;
+  color: var(--Strong-cyan);
+}
+
+.input-container {
+  position: relative;
+}
+
+#bill {
+  background: url("./images/icon-dollar.svg") no-repeat;
+  background-size: 10px;
+  background-position: 5px center;
+  background-color: var(--Very-light-grayish-cyan);
+}
+
+#reset {
+  background-color: var(--Grayish-cyan);
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 50px;
+  display: grid;
+  grid-column: 1/3;
+}
+
+@media screen and (max-width: 416px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+  .grid-1 {
+    margin: 0 auto;
+  }
+  .grid-2 {
+    width: 100%;
+    place-content: center;
+    display: grid;
+    max-width: 200px;
+    margin: 0 auto;
+    height: 85%;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+  .logo {
+    max-width: 50%;
+    min-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
