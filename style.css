@@ -26,7 +26,7 @@ main {
   background-color: var(--White);
   border-radius: 15px;
   padding: 20px;
-
+  /* min-height: 100vh; */
   margin: 0 auto;
   width: 600px;
 }
@@ -199,7 +199,10 @@ span {
     margin: 0 auto;
     height: 85%;
   }
-
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .buttons button {
     width: 100%;
   }
