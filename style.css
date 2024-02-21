@@ -162,15 +162,24 @@ span {
   color: var(--Strong-cyan);
 }
 
-.input-container {
+/* .input-container {
   position: relative;
-}
+} */
 
 #type-money {
   background: url("./images/icon-dollar.svg") no-repeat;
   background-size: 10px;
   background-position: 5px center;
   background-color: var(--Very-light-grayish-cyan);
+  text-align: right;
+}
+
+#people {
+  background: url("./images/icon-person.svg") no-repeat;
+  background-size: 10px;
+  background-position: 5px center;
+  background-color: var(--Very-light-grayish-cyan);
+  text-align: right;
 }
 
 #reset {
