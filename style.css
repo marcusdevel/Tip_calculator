@@ -18,6 +18,8 @@ body {
   box-sizing: border-box;
   text-align: center;
   font-family: "space mono", sans-serif;
+  display: grid;
+  place-items: center;
 }
 
 main {
@@ -31,7 +33,7 @@ main {
   width: 600px;
 }
 .logo {
-  padding: 80px;
+  padding: 60px;
 }
 #name {
   font-size: 10px;
@@ -49,6 +51,7 @@ main {
 }
 #quantity {
   margin-top: 25px;
+  text-align: left;
 }
 .input-money input::placeholder {
   text-align: right;
@@ -76,6 +79,11 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   width: 255px;
+}
+
+.buttons button.active {
+  background-color: blue;
+  color: white;
 }
 #five,
 #ten,
@@ -158,7 +166,7 @@ span {
   position: relative;
 }
 
-#bill {
+#type-money {
   background: url("./images/icon-dollar.svg") no-repeat;
   background-size: 10px;
   background-position: 5px center;
