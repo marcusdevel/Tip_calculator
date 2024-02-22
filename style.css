@@ -28,7 +28,6 @@ main {
   background-color: var(--White);
   border-radius: 15px;
   padding: 20px;
-  /* min-height: 100vh; */
   margin: 0 auto;
   width: 600px;
 }
@@ -61,7 +60,6 @@ main {
   place-items: start;
   max-width: 100%;
   display: grid;
-
   gap: 5px;
   justify-content: space-around;
 }
@@ -81,10 +79,17 @@ main {
   width: 255px;
 }
 
-.buttons button.active {
-  background-color: blue;
+#five:hover,
+#ten:hover,
+#fifteen:hover,
+#twentyfive:hover,
+#fifty:hover,
+#custom:hover {
+  cursor: pointer;
+  background-color: var(--Strong-cyan);
   color: white;
 }
+
 #five,
 #ten,
 #fifteen,
@@ -94,6 +99,7 @@ main {
   background-color: var(--Very-dark-cyan);
   padding: 5px;
   color: white;
+  border-radius: 5px;
   border: none;
   font-weight: bold;
 }
@@ -102,17 +108,15 @@ main {
   padding: 5px 10px;
   color: var(--Very-dark-cyan);
   border: none;
+  border-radius: 5px;
   font-size: 15px;
 }
 
 .grid-2 {
   background-color: var(--Very-dark-cyan);
-
   border-radius: 10px;
   height: 300px;
-
   max-width: 100%;
-
   display: grid;
   padding: 20px;
 }
@@ -162,10 +166,6 @@ span {
   color: var(--Strong-cyan);
 }
 
-/* .input-container {
-  position: relative;
-} */
-
 #type-money {
   background: url("./images/icon-dollar.svg") no-repeat;
   background-size: 10px;
@@ -202,7 +202,6 @@ span {
     max-width: 600px;
     margin: 0 auto;
     width: 100%;
-
     box-sizing: border-box;
   }
   .grid-1 {
