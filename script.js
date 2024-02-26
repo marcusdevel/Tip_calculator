@@ -14,6 +14,9 @@ buttons.forEach((button) => {
       const totalTip = typedValue * tipPercentage;
       const finalAmountPerPerson = totalTip / numberOfPeople;
       tipAmountSpan.textContent = `$${finalAmountPerPerson.toFixed(2)}`;
+
+      const totalAmount = (typedValue / numberOfPeople) + finalAmountPerPerson;
+      totalamountSpan.textContent = `$${totalAmount.toFixed(2)}`;
     } else {
       tipAmountSpan.textContent = "$0.00";
     }
